@@ -1,0 +1,6 @@
+.default {
+}
+
+.done {
+	@apply line-through;
+}
