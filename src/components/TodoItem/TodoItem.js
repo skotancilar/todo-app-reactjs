@@ -1,11 +1,14 @@
-import React from 'react'
 import classNames from 'classnames'
 import './styles.css'
 
-const TodoItem = ({ title, done }) => {
+const TodoItem = ({ title, done, onComplete, id }) => {
+
+   const toggleTask = () => {
+      onComplete(id)
+   }
    return (
       <div>
-         <p
+         <p onClick={toggleTask}
             className={classNames({
                done: done
             })}
