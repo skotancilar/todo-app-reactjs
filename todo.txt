@@ -1,0 +1,18 @@
+# Todo List (*react.js)*: Project Prompt
+
+Our goal is to create a To Do List UI. This UI will have three main components:
+
+- **Header** that labels the To Do list. This is just a basic application identifier
+- A **list** to display each to do item.
+- A **form** that adds a To Do task item to the list. The default complete should be set to `false`.
+
+For our list, there are two additional capabilities that we need to create:
+
+- Give the ability to *toggle on and off* a striket-hrough that indicates completion. When I click on an incomplete "do", its status will be set as completed and it will be strike-through. Likewise, when I click on a completed task, its status will be set as not completed and the strike-through it will be deleted.
+- At the bottom of the list will be a component that will prompt the user to *delete the completed tasks*. This can be a button or some other kind of call-to-action. Will delete all completed "do" in the list.
+
+Example design (it doesn't have to be the same as the design);
+
+"JSX" should be used when creating **react** elements. (A syntax extension of JavaScript)
+
+After the Todo List app is completed, we want it to be deployed in "**Heroku**" platform using "**webpack with react**".
