@@ -24,7 +24,30 @@ input {
    transform 
    scale-105 
    hover:scale-110;
+	animation: 0.4s ease-in;
 }
+.add-button:active {
+	transform: scale(1.05);
+}
+
 .delete-button {
-	@apply w-full bg-blue-800 text-lg text-white p-3 rounded-b;
+	@apply w-full 
+   bg-blue-800
+   text-xl 
+   text-white 
+   p-3 
+   rounded-b
+   flex
+   justify-center;
+	align-items: center;
+	transform: scale(1) translateY(0);
+}
+.delete-button > img {
+	width: 1.8rem;
+	margin-left: 0.5rem;
+}
+
+.delete-button:active {
+	@apply shadow-lg;
+	transform: scale(0.995) translateY(-1px);
 }

@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './styles.css'
 import plusIcon from './plus.svg'
+import trashIcon from './trash.svg'
 
 const Form = ({ addTask, clearCompletedTasks }) => {
    const [title, setTitle] = useState('')
+
 
    const addNewTask = () => {
       addTask(title)
@@ -35,6 +37,7 @@ const Form = ({ addTask, clearCompletedTasks }) => {
                onClick={clearCompletedTasks}
             >
                Clear Completed Tasks
+               <img src={trashIcon} alt="trash icon" />
             </button>
          </div>
 
