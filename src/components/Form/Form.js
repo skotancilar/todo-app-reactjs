@@ -1,11 +1,10 @@
 import { useState } from 'react'
-import './styles.css'
+import './Form.css'
 import plusIcon from './plus.svg'
 import trashIcon from './trash.svg'
 
 const Form = ({ addTask, clearCompletedTasks }) => {
    const [title, setTitle] = useState('')
-
 
    const addNewTask = () => {
       addTask(title)
