@@ -4,12 +4,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: '#3880D7'
+        blue: {
+          light: '#D0E6F5',
+          DEFAULT: '#00CEFD',
+          dark: '#3880D7',
+        }
+      },
+    },
+    variants: {
+      extend: {
+        animation: ['motion-safe'],
       }
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }

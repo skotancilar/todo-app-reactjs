@@ -11,7 +11,7 @@ const TodoItem = ({ title, done, onComplete, id }) => {
          <p onClick={toggleTask}
             className={classNames({
                done: done
-            })}
+            }, 'default')}
          >{title}</p>
       </div >
    )

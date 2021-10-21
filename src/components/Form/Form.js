@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import './styles.css'
+import plusIcon from './plus.svg'
 
 const Form = ({ addTask, clearCompletedTasks }) => {
    const [title, setTitle] = useState('')
@@ -9,14 +11,34 @@ const Form = ({ addTask, clearCompletedTasks }) => {
    }
 
    return (
-      <div>
-         <form>
-            <button type="button" onClick={addNewTask}>Add</button>
-            <input type="text" value={title || ""} onChange={(e) => setTitle(e.target.value)} />
-            <button type="button" onClick={clearCompletedTasks}>Clear Completed Tasks</button>
-         </form>
+      <form>
+         <div className="add-section">
+            <input type="text"
+               placeholder="Add a task here..."
+               value={title || ""}
+               onChange={(e) => setTitle(e.target.value)}
+            />
 
-      </div >
+            <button
+               className="add-button"
+               type="button"
+               onClick={addNewTask}
+            >
+               <img src={plusIcon} alt="plus icon" />
+            </button>
+         </div>
+
+         <div>
+            <button
+               className="delete-button"
+               type="button"
+               onClick={clearCompletedTasks}
+            >
+               Clear Completed Tasks
+            </button>
+         </div>
+
+      </form>
    )
 }
 

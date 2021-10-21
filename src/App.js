@@ -49,11 +49,14 @@ function App() {
   }
 
   return (
-    <>
+    <div className="app">
       <Header />
-      <Form addTask={addTask} clearCompletedTasks={clearCompletedTasks} />
-      <TodoList todos={todos} onComplete={onComplete} />
-    </>
+      <div className="form-list">
+        <Form addTask={addTask} clearCompletedTasks={clearCompletedTasks} />
+        <TodoList todos={todos} onComplete={onComplete} />
+      </div>
+
+    </div>
   );
 }
 

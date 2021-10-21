@@ -1,0 +1,7 @@
+.form-list {
+	@apply p-5 bg-blue-light rounded-md;
+}
+
+.app {
+	@apply container mx-auto my-auto shadow-lg;
+}

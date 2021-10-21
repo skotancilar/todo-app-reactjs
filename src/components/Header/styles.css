@@ -1,0 +1,7 @@
+.header {
+	@apply text-6xl 
+   text-center 
+   my-6 
+   text-white 
+   font-semibold;
+}
